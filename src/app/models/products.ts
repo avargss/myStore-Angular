@@ -1,11 +1,11 @@
-import { ProvidersM } from "./providers";
+import { Proveedor } from "./proveedor";
 
 export interface Product {
   id: number;
   name: string;
   price: number;
   description: string;
-  provider:ProvidersM;
+  proveedor:Proveedor;
 }
 
 export const products = [
@@ -14,9 +14,9 @@ export const products = [
     name: 'Phone XL',
     price: 799,
     description: 'A large phone with one of the best screens',
-    provider:{
+    proveedor:{
       id: 1,
-      name: "TechWorld Inc."
+      nombre: "Proveedor 1"
     }
   },
   {
@@ -24,9 +24,9 @@ export const products = [
     name: 'Phone Mini',
     price: 699,
     description: 'A great phone with one of the best cameras',
-    provider:{
+    proveedor:{
       id: 2,
-      name: "MobileMasters Co."
+      nombre: "Proveedor 2"
     }
   },
   {
@@ -34,9 +34,9 @@ export const products = [
     name: 'Phone Standard',
     price: 299,
     description: '',
-    provider:{
+    proveedor:{
       id: 3,
-      name: "GadgetGuru Ltd."
+      nombre: "Proveedor 3"
     }
   }
 ];

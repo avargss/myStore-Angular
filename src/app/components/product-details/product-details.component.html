@@ -1,10 +1,10 @@
 <h2>Product Details</h2>
 <div *ngIf="product">
-    <h3>{{ product.name }}</h3>
-    <h4>{{ product.price | currency }}</h4>
-    <p>{{ product.description }}</p>
-    <a [title]="product.provider.name" [routerLink]="['/provider', product.provider.id]">
-      {{product.provider.name}}
+  <h3>{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p>
+  <a [title]="product.proveedor.nombre" [routerLink]="['/proveedor', product.proveedor.id]">
+    {{product.proveedor.nombre}}
   </a>
-    <button type="button" (click)="addToCart(product)">Buy</button>
-  </div>
+  <button type="button" (click)="addToCart(product)">Buy</button>
+</div>

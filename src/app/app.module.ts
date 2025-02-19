@@ -11,11 +11,12 @@ import { ProductAlertsComponent } from './components/product-alerts/product-aler
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ShippingComponent } from './components/shipping/shipping.component';
-import { ProviderListComponent } from "./components/provider-list/provider-list.component";
-import { ProviderDetailComponent } from './components/provider-detail/provider-detail.component';
+import { ProveedorListComponent } from "./components/proveedor-list/proveedor-list.component";
+import { ProveedorDetailComponent } from './components/proveedor-detail/proveedor-detail.component';
 import { ProductProviderComponent } from './components/product-provider/product-provider.component';
 
-@NgModule({ declarations: [
+@NgModule({
+    declarations: [
         AppComponent,
         TopBarComponent,
         ProductListComponent,
@@ -27,13 +28,14 @@ import { ProductProviderComponent } from './components/product-provider/product-
     bootstrap: [
         AppComponent
     ], imports: [BrowserModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot([
-        { path: '', component: ProductListComponent },
-        { path: 'products/:productId', component: ProductDetailsComponent },
-        { path: 'cart', component: CartComponent },
-        { path: 'shipping', component: ShippingComponent },
-        { path: 'provider/:providerId', component: ProviderDetailComponent },
-        { path: 'productsProvider/:providerId', component: ProductProviderComponent },
-    ]), ProviderListComponent], providers: [provideHttpClient(withInterceptorsFromDi())] })
+        ReactiveFormsModule,
+        RouterModule.forRoot([
+            { path: '', component: ProductListComponent },
+            { path: 'products/:productId', component: ProductDetailsComponent },
+            { path: 'cart', component: CartComponent },
+            { path: 'shipping', component: ShippingComponent },
+            { path: 'proveedor/:proveedorId', component: ProveedorDetailComponent },
+            { path: 'productsProveedor/:proveedorId', component: ProductProviderComponent },
+        ]), ProveedorListComponent], providers: [provideHttpClient(withInterceptorsFromDi())]
+})
 export class AppModule { }
