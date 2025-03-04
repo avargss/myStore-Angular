@@ -1,11 +1,11 @@
-import { Proveedor } from "./proveedor";
+import { Provider } from "./provider";
 
 export interface Product {
   id: number;
   name: string;
   price: number;
   description: string;
-  proveedor:Proveedor;
+  proveedor:Provider;
 }
 
 export const products = [

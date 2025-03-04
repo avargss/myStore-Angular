@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../models/products';
 import { ActivatedRoute } from '@angular/router';
-import { ProveedorService } from '../../service/providers.service';
+import { ProvidersService } from '../../service/providers.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
@@ -16,7 +16,7 @@ export class ProductProviderComponent implements OnInit{
   products : Product[] = [];
   providerId!: number;
 
-  constructor(private route : ActivatedRoute, private provideService : ProveedorService){}
+  constructor(private route : ActivatedRoute, private provideService : ProvidersService){}
  
   ngOnInit(): void {
    this.providerId = Number(this.route.snapshot.paramMap.get('providerId'));

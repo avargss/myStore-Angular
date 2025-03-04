@@ -1,4 +1,4 @@
-export interface Proveedor2 {
+export interface Products2 {
     product_id: number;
     product_name: string;
     cost: number;

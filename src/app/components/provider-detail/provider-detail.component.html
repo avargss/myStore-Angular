@@ -1,0 +1,6 @@
+<h2>Proveedor Details</h2>
+<div *ngIf="provider">
+    <h4>Id: {{ provider.id  }}</h4>
+    <h3>Nombre: {{ provider.nombre }}</h3>
+    <button [routerLink]="['/productsProveedor' , provider.id ]" >View Products</button>
+  </div>

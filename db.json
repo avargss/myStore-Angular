@@ -5,12 +5,35 @@
             "nombre": "Proveedor 1"
         },
         {
-            "id":2,
+            "id": 2,
             "nombre": "Proveedor 2"
         },
         {
-            "id":3,
+            "id": 3,
             "nombre": "Proveedor 3"
+        }
+    ],
+    "products2": [
+        {
+            "product_id": 4,
+            "product_name": "iPhone 12 Pro",
+            "cost": 799,
+            "detail": "A large phone with one of the best screen",
+            "supplier": "2"
+        },
+        {
+            "product_id": 5,
+            "product_name": "Samsung Galaxy S21",
+            "cost": 699,
+            "detail": "A great phone with one of the best cameras",
+            "supplier": "2"
+        },
+        {
+            "product_id": 6,
+            "product_name": "Xiaomi Mi 11",
+            "cost": 599,
+            "detail": "",
+            "supplier": "3"
         }
     ]
 }

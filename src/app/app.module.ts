@@ -11,8 +11,8 @@ import { ProductAlertsComponent } from './components/product-alerts/product-aler
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { CartComponent } from './components/cart/cart.component';
 import { ShippingComponent } from './components/shipping/shipping.component';
-import { ProveedorListComponent } from "./components/proveedor-list/proveedor-list.component";
-import { ProveedorDetailComponent } from './components/proveedor-detail/proveedor-detail.component';
+import { ProviderListComponent } from "./components/provider-list/provider-list.component";
+import { ProviderDetailComponent } from './components/provider-detail/provider-detail.component';
 import { ProductProviderComponent } from './components/product-provider/product-provider.component';
 
 @NgModule({
@@ -34,8 +34,8 @@ import { ProductProviderComponent } from './components/product-provider/product-
             { path: 'products/:productId', component: ProductDetailsComponent },
             { path: 'cart', component: CartComponent },
             { path: 'shipping', component: ShippingComponent },
-            { path: 'proveedor/:proveedorId', component: ProveedorDetailComponent },
+            { path: 'proveedor/:proveedorId', component: ProviderDetailComponent },
             { path: 'productsProveedor/:proveedorId', component: ProductProviderComponent },
-        ]), ProveedorListComponent], providers: [provideHttpClient(withInterceptorsFromDi())]
+        ]), ProviderListComponent], providers: [provideHttpClient(withInterceptorsFromDi())]
 })
 export class AppModule { }
